@@ -28,10 +28,10 @@ def vrstice_na_spletni_strani(ime_datoteke):
 
 def nalozi_strani():
     url = ('https://www.bsi.si/statistika/devizni-tecaji-in-plemenite-kovine/dnevna-tecajnica-referencni-tecaji-ecb')
-    ime_datoteke = (f'/Users/nik/Desktop/UVP-projekt/Zajem podatkov/zajeta_stran.html')
+    ime_datoteke = (f'/Users/nik/Desktop/UVP-projekt/zajem_podatkov/zajeti_podatki/zajeta_stran.html')
     orodja.shrani_spletno_stran(url, ime_datoteke, vsili_prenos=False)
 
-spl_str = ('/Users/nik/Desktop/UVP-projekt/Zajem podatkov/zajeta_stran.html')
+spl_str = ('/Users/nik/Desktop/UVP-projekt/zajem_podatkov/zajeti_podatki/zajeta_stran.html')
 
 
 vse_vrstice = []
@@ -41,12 +41,12 @@ def zdruzi_vrstice():
 
 
 def ustvari_json():
-    orodja.zapisi_json(vse_vrstice, "/Users/nik/Desktop/UVP-projekt/Zajem podatkov/zajeta_stran.json")
+    orodja.zapisi_json(vse_vrstice, "/Users/nik/Desktop/UVP-projekt/zajem_podatkov/zajeti_podatki/zajeta_stran.json")
 
 imena_polj = ['drzava', 'valuta', 'okrajsava', 'sifra', 'tecaj']
 
 def ustvari_csv():
-    orodja.zapisi_csv(vse_vrstice, imena_polj, "/Users/nik/Desktop/UVP-projekt/Zajem podatkov/zajeta_stran.csv")
+    orodja.zapisi_csv(vse_vrstice, imena_polj, "/Users/nik/Desktop/UVP-projekt/zajem_podatkov/zajeti_podatki/zajeta_stran.csv")
 
 
 nalozi_strani()

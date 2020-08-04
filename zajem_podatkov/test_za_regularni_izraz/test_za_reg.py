@@ -8,7 +8,7 @@ vzorec = (
 zadetki = []
 counter = 0
 
-with open(f"/Users/nik/Desktop/UVP-projekt/test_za_reg_izraz/rocno.html", encoding='utf-8') as file:
+with open(f"/Users/nik/Desktop/UVP-projekt/zajem_podatkov/test_za_regularni_izraz/rocno.html", encoding='utf-8') as file:
     vsebina = file.read()
 
 for zadetek in re.finditer(vzorec, vsebina):
