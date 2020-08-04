@@ -42,6 +42,7 @@ def zdruzi_vrstice():
 
 def ustvari_json():
     orodja.zapisi_json(vse_vrstice, "/Users/nik/Desktop/UVP-projekt/zajem_podatkov/zajeti_podatki/zajeta_stran.json")
+    orodja.zapisi_json(vse_vrstice, "/Users/nik/Desktop/UVP-projekt/zajeta_stran.json")
 
 imena_polj = ['drzava', 'valuta', 'okrajsava', 'sifra', 'tecaj']
 

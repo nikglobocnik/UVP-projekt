@@ -1,0 +1,226 @@
+[
+    {
+        "drzava": "Združene države",
+        "valuta": "AMERIŠKI DOLAR",
+        "okrajsava": "USD",
+        "sifra": "840",
+        "tecaj": 1.1726
+    },
+    {
+        "drzava": "Japonska",
+        "valuta": "JAPONSKI JEN",
+        "okrajsava": "JPY",
+        "sifra": "392",
+        "tecaj": 124.51
+    },
+    {
+        "drzava": "Bolgarija",
+        "valuta": "BOLGARSKI LEV",
+        "okrajsava": "BGN",
+        "sifra": "975",
+        "tecaj": 1.9558
+    },
+    {
+        "drzava": "Češka republika",
+        "valuta": "ČEŠKA KRONA",
+        "okrajsava": "CZK",
+        "sifra": "203",
+        "tecaj": 26.319
+    },
+    {
+        "drzava": "Danska",
+        "valuta": "DANSKA KRONA",
+        "okrajsava": "DKK",
+        "sifra": "208",
+        "tecaj": 7.4466
+    },
+    {
+        "drzava": "Združeno kraljestvo",
+        "valuta": "BRITANSKI FUNT",
+        "okrajsava": "GBP",
+        "sifra": "826",
+        "tecaj": 0.90013
+    },
+    {
+        "drzava": "Madžarska",
+        "valuta": "MADŽARSKI FORINT",
+        "okrajsava": "HUF",
+        "sifra": "348",
+        "tecaj": 345.72
+    },
+    {
+        "drzava": "Poljska",
+        "valuta": "POLJSKI ZLOT",
+        "okrajsava": "PLN",
+        "sifra": "985",
+        "tecaj": 4.4201
+    },
+    {
+        "drzava": "Romunija",
+        "valuta": "ROMUNSKI LEV",
+        "okrajsava": "RON",
+        "sifra": "946",
+        "tecaj": 4.8355
+    },
+    {
+        "drzava": "Švedska",
+        "valuta": "ŠVEDSKA KRONA",
+        "okrajsava": "SEK",
+        "sifra": "752",
+        "tecaj": 10.2958
+    },
+    {
+        "drzava": "Islandija",
+        "valuta": "ISLANDSKA KRONA",
+        "okrajsava": "ISK",
+        "sifra": "352",
+        "tecaj": 160.0
+    },
+    {
+        "drzava": "Švica",
+        "valuta": "ŠVICARSKI FRANK",
+        "okrajsava": "CHF",
+        "sifra": "756",
+        "tecaj": 1.0784
+    },
+    {
+        "drzava": "Norveška",
+        "valuta": "NORVEŠKA KRONA",
+        "okrajsava": "NOK",
+        "sifra": "578",
+        "tecaj": 10.7188
+    },
+    {
+        "drzava": "Hrvaška",
+        "valuta": "HRVAŠKA KUNA",
+        "okrajsava": "HRK",
+        "sifra": "191",
+        "tecaj": 7.4755
+    },
+    {
+        "drzava": "Ruska federacija",
+        "valuta": "RUSKI RUBELJ",
+        "okrajsava": "RUB",
+        "sifra": "643",
+        "tecaj": 86.6018
+    },
+    {
+        "drzava": "Turčija",
+        "valuta": "TURŠKA LIRA",
+        "okrajsava": "TRY",
+        "sifra": "949",
+        "tecaj": 8.1864
+    },
+    {
+        "drzava": "Avstralija",
+        "valuta": "AVSTRALSKI DOLAR",
+        "okrajsava": "AUD",
+        "sifra": "36",
+        "tecaj": 1.6508
+    },
+    {
+        "drzava": "Brazilija",
+        "valuta": "BRAZILSKI REAL",
+        "okrajsava": "BRL",
+        "sifra": "986",
+        "tecaj": 6.1375
+    },
+    {
+        "drzava": "Kanada",
+        "valuta": "KANADSKI DOLAR",
+        "okrajsava": "CAD",
+        "sifra": "124",
+        "tecaj": 1.5755
+    },
+    {
+        "drzava": "Kitajska",
+        "valuta": "KITAJSKI JUAN RENMINBI",
+        "okrajsava": "CNY",
+        "sifra": "156",
+        "tecaj": 8.19
+    },
+    {
+        "drzava": "Hongkong",
+        "valuta": "HONGKONŠKI DOLAR",
+        "okrajsava": "HKD",
+        "sifra": "344",
+        "tecaj": 9.0882
+    },
+    {
+        "drzava": "Indonezija",
+        "valuta": "INDONEZIJSKA RUPIJA",
+        "okrajsava": "IDR",
+        "sifra": "360",
+        "tecaj": 17254.0
+    },
+    {
+        "drzava": "Izrael",
+        "valuta": "NOVI IZRAELSKI ŠEKEL",
+        "okrajsava": "ILS",
+        "sifra": "376",
+        "tecaj": 4.0056
+    },
+    {
+        "drzava": "Indija",
+        "valuta": "INDIJSKA RUPIJA",
+        "okrajsava": "INR",
+        "sifra": "356",
+        "tecaj": 88.1805
+    },
+    {
+        "drzava": "Koreja, Republika",
+        "valuta": "JUŽNOKOREJSKI WON",
+        "okrajsava": "KRW",
+        "sifra": "410",
+        "tecaj": 1401.26
+    },
+    {
+        "drzava": "Mehika",
+        "valuta": "MEHIŠKI PESO",
+        "okrajsava": "MXN",
+        "sifra": "484",
+        "tecaj": 26.269
+    },
+    {
+        "drzava": "Malezija",
+        "valuta": "MALEZIJSKI RINGGIT",
+        "okrajsava": "MYR",
+        "sifra": "458",
+        "tecaj": 4.9501
+    },
+    {
+        "drzava": "Nova Zelandija",
+        "valuta": "NOVOZELANDSKI DOLAR",
+        "okrajsava": "NZD",
+        "sifra": "554",
+        "tecaj": 1.7701
+    },
+    {
+        "drzava": "Filipini",
+        "valuta": "FILIPINSKI PESO",
+        "okrajsava": "PHP",
+        "sifra": "608",
+        "tecaj": 57.579
+    },
+    {
+        "drzava": "Singapur",
+        "valuta": "SINGAPURSKI DOLAR",
+        "okrajsava": "SGD",
+        "sifra": "702",
+        "tecaj": 1.6147
+    },
+    {
+        "drzava": "Tajska",
+        "valuta": "TAJSKI BAHT",
+        "okrajsava": "THB",
+        "sifra": "764",
+        "tecaj": 36.644
+    },
+    {
+        "drzava": "Južna Afrika",
+        "valuta": "JUŽNOAFRIŠKI RAND",
+        "okrajsava": "ZAR",
+        "sifra": "710",
+        "tecaj": 20.2777
+    }
+]
