@@ -222,5 +222,12 @@
         "okrajsava": "ZAR",
         "sifra": "710",
         "tecaj": 20.2777
+    },
+    {
+        "drzava": "Evropska unija",
+        "valuta": "EVRO",
+        "okrajsava": "EUR",
+        "sifra": "?",
+        "tecaj": 1.0
     }
 ]

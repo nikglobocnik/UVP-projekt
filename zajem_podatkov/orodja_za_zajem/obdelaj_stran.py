@@ -34,10 +34,12 @@ def nalozi_strani():
 spl_str = ('/Users/nik/Desktop/UVP-projekt/zajem_podatkov/zajeti_podatki/zajeta_stran.html')
 
 
+
 vse_vrstice = []
 def zdruzi_vrstice():
     for vrstica in vrstice_na_spletni_strani(spl_str):
         vse_vrstice.append(vrstica)
+    vse_vrstice.append({'drzava': 'Evropska unija', 'valuta': 'EVRO', 'okrajsava': 'EUR', 'sifra':'?', 'tecaj': 1.00})
 
 
 def ustvari_json():
