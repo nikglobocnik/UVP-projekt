@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+    <head>
+        <title>Pretvornik</title>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+
+            * {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            /* https://www.svgbackgrounds.com/#protruding-squares */
+            html {
+                background-color: rgba(128, 128, 128, 0.274);
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='53' height='53' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='0.11' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+            }
+
+            header > h1 {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 10px 0;
+            }
+
+            main > div {
+                width: 31%;
+                padding: 10px;
+                background-color: rgba(128, 128, 128, 0.757);
+                border-radius: 5px;
+                outline: gray;
+                margin: 10px;
+            }
+
+            footer {
+                background-color:rgba(128, 128, 128, 0.657);
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+            }
+
+            select, input {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                padding: 5px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid rgb(95, 95, 95);
+            }
+
+            label {
+                font-size: 11pt;
+                font-weight: bold;
+            }
+
+            body {
+                background-color:rgba(128, 128, 128, 0.0);
+                }
+
+            .pretvorjeno {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 17pt;
+            }
+
+            .button {
+                margin-top: 20px;
+                height: 37px;
+                font-size: 13pt;
+            }
+
+            @media screen and (max-width: 900px) {
+                main > div {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+
+            .opis {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13pt;
+                margin: 10px;
+                background-color: rgba(128, 128, 128, 0.5)
+            }
+
+            .pretvorjeno {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 17pt;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>PRETVORNIK VALUT</h1>
+        </header>
+            
+        <div class = "opis", name="username">
+                Pozdravljen_a!<br>
+                Pred tabo se nahaja preprost pretvornik valut. Izberi iz katere v katero valuto želiš pretvarjati. Prav tako vpiši svoj znesek in klikni pretvori. Program ti bo beležil tudi zgodovino pretvorb. <br>
+        </div>
+
+        <main>
+            
+            <div>
+                <form action="/convert/", method = "POST">
+                    <label>Pretvori iz:</label>
+                    <select name="curr1" required class="custom-select">
+                        % for curr, d in currencies.items():
+                        <option value={{curr}}>{{d[0]}} ({{curr}})</option>
+                        % end
+                    </select>
+                   
+
+                    <label>Pretvori v:</label>
+
+                    <select name="curr2" required class="custom-select">
+                            % for curr, d in currencies.items():
+                            <option value={{curr}}>{{d[0]}} ({{curr}})</option>
+                            % end
+                        </select>
+                       
+                   
+                   
+
+                    <label>Znesek:</label>
+                    <input type="number", name="value", placeholder="Vnesi znesek", required class="form-control", min = "0", step ="any">
+                    <input class="button" type="submit" value="Pretvori">
+                   
+                </form>
+            </div>
+            <div class="pretvorjeno"> 
+                %if value is not None or curr1 is not None or curr2 is not None:
+                {{value}} {{curr1}} = {{res}} {{curr2}}
+                %end
+            </div>
+            <div>
+                Zgodovina pretvorb: <br>
+                % if history == None or len(history)==0 or curr1 == None or curr2 == None or value == None:
+                % pass
+                % elif len(history)==0:
+                % pass
+                % elif len(history) > 0:
+                % for i in range(min(len(history),12)):
+                 <li> {{history[i]}} </li>
+                % end
+            </div>
+            %end
+            
+        </main>
+
+        <footer>
+            <div>
+                Nik Globočnik
+            </div>
+            <div>
+                Avgust 2020, Uvod v programiranje
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
