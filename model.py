@@ -13,7 +13,6 @@ with open('zajeta_stran.json', 'r', encoding='utf-8') as f:
 
 
 class Convert:
-
     def __init__(self,value:float,curr1:str,curr2:str):
         self.value = value
         self.curr1 = curr1
@@ -26,12 +25,7 @@ class Convert:
         return round(self.value * rate1 * rate2, 2)
 
 
-    def deletehistory(self):
-        return history.clear()
-
-
-
-
-print(history)
+    #def deletehistory(self):
+    #   return history.clear()
 
 
