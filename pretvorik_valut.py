@@ -28,10 +28,6 @@ def converted_post():
         return bottle.redirect("/convert/")
     
 
-
-
-
-
 bottle.run(debug=True, reloader=True)
 
 

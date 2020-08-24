@@ -4,7 +4,7 @@
 
 ## Osnovno o nalogi
 
-Za končni projekt pri predmetu *Uvod v programiranje* sem se ogločil napisati preprost pretvornik valut. Pretvornik uporablja podatke [Banke Slovenije](https://www.bsi.si/statistika/devizni-tecaji-in-plemenite-kovine/dnevna-tecajnica-referencni-tecaji-ecb), ki se posodobijo ob vsakem zagonu pretvornika. Pretvornik prav tako beleži zgodovino pretvorb.
+Za končni projekt pri predmetu *Uvod v programiranje* sem se odločil napisati preprost pretvornik valut. Pretvornik uporablja podatke [Banke Slovenije](https://www.bsi.si/statistika/devizni-tecaji-in-plemenite-kovine/dnevna-tecajnica-referencni-tecaji-ecb), ki se posodobijo ob vsakem zagonu pretvornika. Pretvornik prav tako beleži zgodovino pretvorb.
 
 Spletni vmestnik je bil narejen s pomočjo knjižnice [Bottle](https://bottlepy.org/docs/dev/).
 
